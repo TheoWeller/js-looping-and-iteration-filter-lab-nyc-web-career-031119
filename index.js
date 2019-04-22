@@ -1,5 +1,5 @@
 // Code your solution in this file
 function findMatching(collection, attribute) {
-  newArray = collection.filter(function (name) {name == attribute});
+  collection.filter(function (name) {return name ? name === attribute});
   return newArray;
 }
