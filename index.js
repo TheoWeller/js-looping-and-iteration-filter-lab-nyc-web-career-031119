@@ -13,7 +13,8 @@ function matchName(collection, attribute) {
   newArray = [];
   for (const user of collection) {
     if(user.name === attribute) {
-      newArray.push(user)
+      newArray.push(user);
+      return newArray;
     }
   }
-}
+};
