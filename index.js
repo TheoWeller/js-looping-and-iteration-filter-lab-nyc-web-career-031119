@@ -6,5 +6,6 @@ function findMatching(collection, attribute) {
 
 function fuzzyMatch(collection, attribute) {
   let match = attribute.slice(0, 2);
-  collection.filter(name => name.slice(0, 2) == match);
+  const newArray = collection.filter(name => name.slice(0, 2) == match);
+  return newArray;
 }
