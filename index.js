@@ -1,4 +1,4 @@
 // Code your solution in this file
-function findMatching(collection, attribute) {
-  return collection.filter(name => attribute);
+function findMatching(collection, name) {
+  collection.filter(function (name) {return name})
 }
