@@ -13,20 +13,3 @@ function fuzzyMatch(collection, attribute) {
 function matchName(collection, attribute) {
   collection.filter(user => user.name === attribute)
 };
-
-
-
-
-
-
-
-
-function matchName(collection, attribute) {
-  newArray = [];
-  for (const user of collection) {
-    if(user.name === attribute) {
-      newArray.push(user);
-      return newArray;
-    }
-  }
-};
