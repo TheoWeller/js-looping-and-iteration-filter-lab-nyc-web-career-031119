@@ -9,3 +9,11 @@ function fuzzyMatch(collection, attribute) {
   const newArray = collection.filter(name => name.slice(0, 2) == match);
   return newArray;
 }
+function matchName(collection, attribute) {
+  newArray = [];
+  for (const user of collection) {
+    if(user.name === attribute) {
+      newArray.push(user)
+    }
+  }
+}
