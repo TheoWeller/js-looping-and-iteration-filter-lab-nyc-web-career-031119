@@ -11,5 +11,6 @@ function fuzzyMatch(collection, attribute) {
 }
 
 function matchName(collection, attribute) {
-  collection.filter(user => user.name === attribute)
+  let result = collection.filter(user => user.name === attribute);
+  return result;
 };
